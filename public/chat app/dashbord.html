@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./socket.io.js"></script>
+    <!-- <script defer src="http://localhost:8000/socket.io/socket.io.js"></script> -->
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+
+
+    <div class="col-md-12 text-center">
+        <h2 class="text-white">Welcome <span id="pName"></span></h2>
+    </div>
+    <nav>
+        <img src="./caht.png" class="logo">
+    </nav>
+    
+    <div class="dashbord-container" id="container">
+        <div  id="right">
+
+        </div>
+        <div class="message left">
+         
+        </div>
+    </div>
+
+    <div class="send">
+
+
+        
+
+
+        <form action="#" id="send-container" onsubmit="return getProfile(); getTweets(); getUsers()">
+           
+           
+           
+            <input type="text" name="messageInp"  id="userPost">
+            <button class="btn1">Send</button>
+        </form>
+
+
+        <ul class="navbar-nav mr-auto">
+            <li >
+                <a href="#" onclick="showHome()">Home <span
+                        class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="#" onclick="showProfile()">Profile <span
+                        class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="#" onclick="showUsers()">Users<span
+                        class="sr-only"></span></a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./../app.js"></script>
+</body>
+
+</html>
